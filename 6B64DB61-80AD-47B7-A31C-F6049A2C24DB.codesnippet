@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>tb</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    // Return the number of sections.
+    return &lt;#0#&gt;;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    // Return the number of rows in the section.
+    return &lt;#0#&gt;;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return &lt;#0#&gt;;
+}
+
+#pragma mark - Table view delegate method
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellIdentifier=@"&lt;#CellIdentifier#&gt;";
+    BOOL nibsRegistered=NO;
+    if (!nibsRegistered) {
+        UINib *nib=[UINib nibWithNibName:@"&lt;#CellIdentifier#&gt;" bundle:nil];
+        [tableView registerNib:nib forCellReuseIdentifier:cellIdentifier];
+        nibsRegistered=YES;
+    }
+    &lt;#CellIdentifier#&gt; *cell=[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    //cell 上的元素初始化代码
+    
+    return cell;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6B64DB61-80AD-47B7-A31C-F6049A2C24DB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UITableView Method include delegate method</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>TableView_Method</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
