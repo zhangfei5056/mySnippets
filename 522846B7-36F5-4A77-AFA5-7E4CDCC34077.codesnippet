@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>idevice</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    NSString *deviceModel =     [UIDevice currentDevice].model;
+    NSLog(@"your device:%@",deviceModel);
+ 
+    CGSize iOSDeviceScreenSize = [UIScreen mainScreen].bounds.size;
+    CGFloat height = iOSDeviceScreenSize.height;
+    CGFloat width = iOSDeviceScreenSize.width;
+    if([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone) {
+        
+        if ( height &gt; width) {
+            //竖屏
+            
+            if (height == 568) {
+                NSLog(@"iphone 5/5s/5c ");
+
+                
+            }
+            else if (height == 667) {
+                NSLog(@"iphone 6");
+
+            }
+            else if (height == 736) {
+                NSLog(@"iphone 6 plus");
+
+            }
+            else {
+                NSLog(@"iphone4 4s ipod");
+
+            }
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>522846B7-36F5-4A77-AFA5-7E4CDCC34077</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>跟进屏幕长度</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>获取设备型号</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

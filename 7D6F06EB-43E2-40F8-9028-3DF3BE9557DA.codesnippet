@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>iget</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)get
+{
+    NSString *urlStr = @"http://www.weather.com.cn/adat/sk/101010100.html";
+    NSError* error;
+    //加载一个NSURL对象
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlStr]];
+    request.timeoutInterval=5.0;//设置请求超时为5秒
+    request.HTTPMethod=@"GET";//设置请求方法
+    //将请求的url数据放到NSData对象中
+    NSData* response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    //IOS5自带解析类NSJSONSerialization从response中解析出数据放到字典中
+    NSDictionary* weatherDic = [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingMutableLeaves error:&amp;error];
+    if (weatherDic) {
+        NSLog(@"%@", weatherDic);
+        
+    }
+    else {
+        NSLog(@"%@", error);
+        
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7D6F06EB-43E2-40F8-9028-3DF3BE9557DA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>系统自带的Get请求</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>HTTP Get method</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

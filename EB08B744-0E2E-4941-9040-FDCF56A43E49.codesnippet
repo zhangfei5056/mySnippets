@@ -3,25 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>iys</string>
+	<string>iblock</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(&lt;#2#&gt; * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-    
-    &lt;#do UI mainThread#&gt;
-    
-});</string>
+	<string>typedef void(^&lt;#BlockName#&gt;)(id result);
+
+- (void)doSomethingWithBlock:(NSString *)something
+                       Blokc:(&lt;#BlockName#&gt;)block
+{
+    block(&lt;#result#&gt;);
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>695A3D56-85F1-42E7-B8A9-8C757A19C1AF</string>
+	<string>EB08B744-0E2E-4941-9040-FDCF56A43E49</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>延迟n秒执行</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>dispath after</string>
+	<string>define Block call back</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

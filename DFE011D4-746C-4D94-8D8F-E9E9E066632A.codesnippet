@@ -3,25 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>iys</string>
+	<string>iiboutlet</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassInterfaceVariables</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(&lt;#2#&gt; * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-    
-    &lt;#do UI mainThread#&gt;
-    
-});</string>
+	<string>@property (weak, nonatomic) IBOutlet &lt;#UILabel#&gt; *&lt;#label#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>695A3D56-85F1-42E7-B8A9-8C757A19C1AF</string>
+	<string>DFE011D4-746C-4D94-8D8F-E9E9E066632A</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>延迟n秒执行</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>dispath after</string>
+	<string>IBOutlet</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
