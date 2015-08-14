@@ -3,26 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ialert</string>
+	<string>iweak</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"title"
-                                                   message:@"message"
-                                                  delegate:self
-                                         cancelButtonTitle:@"cancel"
-                                          otherButtonTitles:@"OK", nil];
-    [alert show];</string>
+	<string>    __weak typeof(self) &lt;#weakSelf#&gt; = self;
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B08B0842-3154-474E-9A18-AD498763C43F</string>
+	<string>1D09A090-3FD4-4D11-8D62-A60A72F4D626</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>qucik make UIAlertView</string>
+	<string>__weak Class *weak = class;弱引用对象，在block中使用</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UIAlertView_Snippet</string>
+	<string>__weak typeof(self)</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

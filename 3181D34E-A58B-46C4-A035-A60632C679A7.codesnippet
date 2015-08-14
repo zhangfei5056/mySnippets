@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ibt</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    &lt;#UIButton#&gt; *&lt;#button#&gt; = [[&lt;#UIButton#&gt; alloc] initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)];
+[&lt;#button#&gt; setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+[&lt;#button#&gt; setTitle:@"button" forState:UIControlStateNormal];
+&lt;#button#&gt;.backgroundColor = [UIColor colorWithRed:0.874 green:0.477 blue:0.887 alpha:1.000];
+    [&lt;#button#&gt;  addTarget:self action:@selector(buttonAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:&lt;#button#&gt;];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3181D34E-A58B-46C4-A035-A60632C679A7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>quick generate a button</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIButton with target @selector</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
